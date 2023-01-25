@@ -23,8 +23,6 @@ I added :
 - display of album cover, artist and song currently playing
 - progress and volume bars
 - mute functionality
-
-I couldn't implement (for lack of time) :
 - sorting by artist, album and duration
 
 See attached file for 1st design and storyboard (I've updated the design a bit since) : 
