@@ -1,0 +1,339 @@
+/******************************RESET**********************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/****************************** FIN RESET**********************************/
+
+:root {
+    --bgcolor: #0e293df2;
+    --secondary-color : #89F2C6;
+    --fond-main: #FFFBF0;
+}
+
+body {
+    background-color: var(--fond-main);
+}
+
+
+/****************************HEADER*****************/
+header {
+    height: 13vh;
+    background-color: var(--bgcolor);
+    color: var(--secondary-color);
+    /* position: sticky; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Comfortaa', Helvetica;
+    font-size: 2rem;
+    padding: 0 70px;
+    box-sizing: border-box;
+}
+
+header h1 {
+    letter-spacing: 0.2rem;
+}
+
+header li {
+    letter-spacing: 0rem;
+    font-size: 1rem;
+    font-family: 'Comfortaa', Helvetica;
+    margin: 10px 10px 10px 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    letter-spacing: 0.07rem;
+}
+
+header a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+/************************MAIN***********************/
+
+main {
+    box-sizing: border-box;
+    background-color: var(--fond-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    font-family: 'Inconsolata';
+    padding: 1rem 5rem;
+    position: fixed;
+    flex : 1;
+}
+
+/***********************PLAYER***********************/
+aside {
+    background-color: var(--bgcolor);
+    /* background: radial-gradient(circle, rgba(17, 42, 61, 0.818) 0%, rgba(22, 86, 95, 0.923) 49%, rgba(12, 81, 82, 0.792) 79%, rgba(29, 93, 73, 0.485) 100%);  */
+    color: var(--fond-main);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    min-width: 248px;
+    max-height: 420px;
+    gap: 20px;
+    filter: drop-shadow(4px 4px 10px rgb(73, 72, 72));
+    position: relative;
+    margin-top: 10px;
+}
+
+.a-lecoute {
+    background-color: var(--secondary-color);
+    color: var(--bgcolor);
+    border-radius: 5px 5px 0 0;
+    position: absolute;
+    text-align: center;
+    height: 15px;
+    width: 85px;
+    top: -15px;
+    left: 20px;
+    filter: drop-shadow(4px -2px 4px rgba(128, 128, 128, 0.238));
+}
+
+.cover {
+    min-width: 150px;
+    min-height: 150px;
+    background-color: lightgrey;
+    background-image: url();
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    font-size: 4rem;
+    color: var(--bgcolor);
+    z-index: -1;
+}
+
+.artist-display, .track-title {
+    height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.track-title {
+    font-size: 1.5rem;
+}
+
+.container-play-btns {
+    display: flex;
+    gap: 20px;
+    font-size: 1.8rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.shuffle, .repeat {
+    font-size: 1.1rem;
+    color: #89f2c66e;
+}
+
+.active {
+    color: var(--secondary-color);
+}
+
+.play-pause-toggle:hover {
+    text-shadow: 72px 2px 3px 10px grey;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.current-time, .total-time {
+    width: 35px;
+}
+
+.container-volume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 20px;
+}
+
+input[type="range"] {
+    accent-color: #3e7a61;
+    background-size: 10% 100%;
+}
+
+.stop {
+    background-color: var(--secondary-color);
+    color: var(--bgcolor);
+    border-radius: 5px 5px 0 0;
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    bottom: 0;
+    right: 30px;
+    padding-right: 5px;
+    filter: drop-shadow(4px -4px 10px rgb(0, 0, 0));    
+    height: 26px;
+    transition: all .1s linear;
+}
+
+.stop:hover {
+    cursor: pointer;
+    width: 58px;
+    height: 25px;
+}
+
+.reset {
+    color: #7E8891;
+    background-color: #D4D4D4;
+}
+
+.controls-reset {
+    color: #7E8891;
+}
+
+.container-play-btns .reset {
+    background-color: var(--bgcolor);
+}
+
+.stop i {
+    padding: 5px 5px;
+}
+
+/***************TRACKLIST***********************/
+
+.tracklist {
+    margin: 35px;
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    height: 40px;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.titlehead {
+    padding-left: 20px;
+}
+
+td {
+    border-bottom: solid 1px rgba(189, 179, 179, 0.532);
+    height: 22px;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.song:hover {
+    background-color: #89f2c662;
+    cursor: pointer;
+}
+
+.filled {
+    background-color: #89f2c662;
+    cursor: pointer;
+}
+
+.number, 
+.duration,
+.numberhead, 
+.durationhead {
+    text-align: right;
+    padding-right: 4px;
+}
+
+.number {
+    width: 25px;
+    padding-left: 7px;
+}
+
+.title {
+    padding-left: 20px;
+}
+
+i.fa-record-vinyl {
+    color: green;
+}
+
+/*****************************FOOTER**********************************/
+footer {
+    height: 6rem;
+    background-color: var(--bgcolor);
+    color: var(--secondary-color);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: end;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+footer h1 {
+    padding: 0 5rem 1rem 0;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    font-family: 'Comfortaa', Helvetica;
+}

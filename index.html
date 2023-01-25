@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Player - Music is Life</title>
+    <link rel="icon" href="favicon.ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CDN FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Aurora_</h1>
+      <ul>
+        <li>
+          <a href="../../index.php">Accueil</a>
+        </li>
+        <li>
+          <a href="https://github.com/3l5a/audio_player">GitHub du projet</a>
+        </li>
+        <li>
+          <a href="design2/index.html">Version 2.0</a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <!-- PLAYER -->
+      <aside class="player">
+        <div class="a-lecoute reset">à l'écoute</div>
+        <div class="playing"></div>
+        <div class="cover"><i class="fa-solid fa-music"></i></div>
+        <h3 class="artist-display"></h3>
+        <h2 class="track-title"></h2>
+        <div class="container-play-btns">
+          <div class="shuffle"><i class="fa-solid fa-shuffle"></i></div>
+          <div class="previous">
+            <i class="fa-solid fa-backward-step"></i>
+          </div>
+          <div class="play-pause">
+            <i class="fa-solid play-pause-toggle fa-circle-play"></i>
+          </div>
+          <div class="next"><i class="fa-solid fa-forward-step"></i></div>
+          <div class="repeat"><i class="fa-solid fa-repeat"></i></div>
+        </div>
+        <div class="container-progress">
+          <div class="time">
+            <div id="timer">0:00</div>
+            <input
+              type="range"
+              name=""
+              id="duration"
+              class=""
+              min="0"
+              max="100"
+            />
+            <div class="total-time">0:00</div>
+          </div>
+
+          <div class="container-volume">
+            <i class="fa-solid fa-volume-low"></i>
+            <input
+              type="range"
+              name=""
+              id="volume"
+              class=""
+              min="0"
+              max="100"
+            />
+            <i class="fa-solid fa-volume-high"></i>
+          </div>
+        </div>
+        <div class="stop reset">
+          <i class="fa-sharp fa-solid fa-stop"></i>STOP
+        </div>
+        <audio src="" id="audio">
+          Votre lecteur ne prend pas en charge les fichiers audio
+        </audio>
+      </aside>
+      <!-- TRACKLIST -->
+      <div class="tracklist">
+        <table>
+          <thead>
+            <th class="numberhead">#</th>
+            <th class="titlehead">TITRE</th>
+            <th class="artisthead">ARTISTE</th>
+            <th class="albumhead">ALBUM</th>
+            <th class="durationhead"><i class="fa-regular fa-clock"></i></th>
+          </thead>
+          <tr class="song first-song">
+            <td class="number">1</td>
+            <td class="title"></td>
+            <td class="artist"></td>
+            <td class="album"></td>
+            <td class="duration"></td>
+          </tr>
+          <tr class="song second-song">
+            <td class="number">2</td>
+            <td class="title"></td>
+            <td class="artist"></td>
+            <td class="album"></td>
+            <td class="duration"></td>
+          </tr>
+          <tr class="song third-song">
+            <td class="number">3</td>
+            <td class="title"></td>
+            <td class="artist"></td>
+            <td class="album"></td>
+            <td class="duration"></td>
+          </tr>
+          <tr class="song fourth-song">
+            <td class="number">4</td>
+            <td class="title"></td>
+            <td class="artist"></td>
+            <td class="album"></td>
+            <td class="duration"></td>
+          </tr>
+          <tr class="song fifth-song">
+            <td class="number">5</td>
+            <td class="title"></td>
+            <td class="artist"></td>
+            <td class="album"></td>
+            <td class="duration"></td>
+          </tr>
+          <tr class="song sixth-song">
+            <td class="number">6</td>
+            <td class="title"></td>
+            <td class="artist"></td>
+            <td class="album"></td>
+            <td class="duration"></td>
+          </tr>
+          <tr class="song seventh-song">
+            <td class="number">7</td>
+            <td class="title"></td>
+            <td class="artist"></td>
+            <td class="album"></td>
+            <td class="duration"></td>
+          </tr>
+          <tr class="song eighth-song">
+            <td class="number">8</td>
+            <td class="title"></td>
+            <td class="artist"></td>
+            <td class="album"></td>
+            <td class="duration"></td>
+          </tr>
+          <tr class="song ninth-song">
+            <td class="number">9</td>
+            <td class="title"></td>
+            <td class="artist"></td>
+            <td class="album"></td>
+            <td class="duration"></td>
+          </tr>
+          <!-- <tr class="song tenth-song">
+            <td class="number">10</td>
+            <td class="title"></td>
+            <td class="artist"></td>
+            <td class="album"></td>
+            <td class="duration"></td>
+          </tr>
+          <tr class="song eleventh-song">
+            <td class="number">11</td>
+            <td class="title"></td>
+            <td class="artist"></td>
+            <td class="album"></td>
+            <td class="duration"></td>
+          </tr> -->
+        </table>
+      </div>
+    </main>
+    <footer>
+      <h1>Music is Life_</h1>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>
