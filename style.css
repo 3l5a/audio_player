@@ -337,3 +337,26 @@ footer h1 {
     font-size: 2rem;
     font-family: 'Comfortaa', Helvetica;
 }
+
+@media (max-width: 805px){
+
+    header {
+        padding: 0;
+    }
+
+    header h1 {
+        display: none;
+    }
+    
+    main {
+        padding: 0;
+        flex-direction: column;
+        padding-top: 20px;
+        margin: 0px;
+        height: auto;
+    }
+
+    footer {
+        display: none;
+    }
+}

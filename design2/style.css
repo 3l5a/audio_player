@@ -59,9 +59,7 @@ body {
 /****************************HEADER*****************/
 header {
     height: 13vh;
-    /* background-color: var(--bgcolor); */
     color: var(--secondary-color);
-    /* position: sticky; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -115,6 +113,8 @@ main {
     box-sizing: border-box;
     height: 78vh;
 }
+
+
 
 /***********************PLAYER***********************/
 aside {
@@ -288,6 +288,7 @@ input[type="range"] {
 }
 
 
+
 /***************TRACKLIST***********************/
 
 .tracklist {
@@ -377,6 +378,7 @@ footer {
     box-sizing: border-box;
 }
 
+
 footer h1 {
     padding: 0 5rem 1rem 0;
     letter-spacing: 0.2rem;
@@ -385,13 +387,26 @@ footer h1 {
 }
 
 
-@media (max-width: 430px){
+@media (max-width: 805px){
+
+    header {
+        padding: 0;
+    }
+
+    header h1 {
+        display: none;
+    }
+    
     main {
+        padding: 0;
         flex-direction: column;
+        padding-top: 20px;
+        margin: 0px;
+        height: auto;
     }
 
     footer {
-        position: static;
-    };
+        display: none;
+    }
 }
 
