@@ -1,4 +1,4 @@
-# Audio player - 1st project in JavaScript, 1 week time
+# Audio player - project in JavaScript/CSS/HTML
 
 Instructions :
 - at least 3 songs
