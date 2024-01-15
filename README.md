@@ -24,6 +24,7 @@ I added :
 - progress and volume bars
 - mute functionality
 - sorting by artist, album and duration
+- kind of made it responsive
 
 See attached file for 1st design and storyboard (I've updated the design a bit since) : 
 [e-thievet_maquette-et-storyboards.pptx](https://github.com/3l5a/audio_player/files/10325909/e-thievet_maquette-et-storyboards.pptx)
